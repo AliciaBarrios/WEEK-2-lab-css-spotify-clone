@@ -6,3 +6,165 @@ Green: #00B172
 White: #FFF
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500&display=swap');
+
+html, h1, body, section{
+    margin: 0;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/*Estilos del header*/
+header{
+    background-image: url(../images/landing.jpg);
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center;
+    margin-top: 90px;
+}
+#header-bar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.8rem;
+}
+nav ul li{
+    display: inline;
+    margin: 0.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #1A1A1A;
+}
+#logo{
+    width: 180px;
+    height: auto;
+}
+#header-info{
+    color: #FFF;
+    height: 110vh;
+}
+#header-info h1{
+    font-size: 4rem;
+}
+#header-info p{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 50vw;
+    text-align: center;
+}
+/*Contenedores display flex*/
+.container-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilos segunda sección*/
+#spotify-products{
+    margin: 1rem;
+}
+#spotify-products h2{
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.8rem;
+}
+.underline-green{
+    width: 12.5em;
+    height: 2px;
+    background-color: #00B172;
+}
+#spotify-products article{
+    width: 30vw;
+    height: 50vh;
+    margin: 2rem 0;
+}
+#spotify-products article img{
+    width: 90px;
+    height: auto;
+}
+#spotify-products article h3{
+    font-family: 'Archivo', sans-serif;
+    color: #00B172;
+    font-size: 1.4rem;
+    font-weight: 600;
+    word-spacing: 0.3rem;
+}
+#spotify-products article p{
+    text-align: center;
+    width: 20vw;
+    color: #1A1A1A;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 0;
+}
+/*Estilos tercera sección*/
+#spotify-services{
+    background-color: #00B172;
+    margin: 0 3rem;
+    padding: 3rem 1rem;
+    color: #FFF;
+}
+#spotify-services h2{
+    grid-area: h2;
+    word-spacing: 0.3rem;
+    margin: 0;
+    font-size: 1.8rem;
+}
+.underline-white{
+    grid-area: hr;
+    width: 25em;
+    height: 2px;
+    background-color: white;
+    align-items: left;
+}
+#articles{
+    grid-area: articles;
+    width: 23vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+#articles > h3{
+    font-size: 2rem;
+}
+#articles > p{
+    font-size: 1rem;
+    font-weight: 100;
+}
+#spotify-icon{
+    grid-area: img-1;
+    width: 110px;
+    height: auto;
+}
+#spotify-app{
+    grid-area: img-2;
+    width: 300px;
+    height: auto;
+}
+.container-grid{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-areas: 
+    'h2  h2  h2'
+    'hr . img-2'
+    'articles img-1 img-2';
+} 
